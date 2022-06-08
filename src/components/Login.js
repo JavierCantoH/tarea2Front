@@ -12,9 +12,12 @@ const SIGNUP_MUTATION = gql`
     createUser(
       email: $email
       password: $password
-      name: $name
+      username: $name
     ) {
-      token
+      user{
+        username
+        password
+      }
     }
   }
 `;
