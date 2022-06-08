@@ -7,9 +7,8 @@ const CREATE_LINK_MUTATION = gql`
     $description: String!
     $url: String!
   ) {
-    post(description: $description, url: $url) {
+    createLink(description: $description, url: $url) {
       id
-      createdAt
       url
       description
     }
@@ -28,7 +27,8 @@ const CreateLink = () => {
     variables: {
       description: formState.description,
       url: formState.url
-    }, onCompleted: () => navigate('/')
+    },
+    onCompleted: () => navigate('/')
   });
 
   return (
@@ -50,7 +50,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="Name of the movie"
+            placeholder="Movie Title"
           />
           <input
             className="mb2"
@@ -62,7 +62,7 @@ const CreateLink = () => {
               })
             }
             type="text"
-            placeholder="Platform to watch it"
+            placeholder="Where to watch it?"
           />
         </div>
         <button type="submit">Submit</button>
