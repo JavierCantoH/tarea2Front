@@ -13,11 +13,11 @@ input {
 }
 
 .orange {
-  background-color: #165ac8;
+  background-color: rgb(114, 95, 255);
 }
 
 .background-gray {
-  background-color: rgb(246, 246, 239);
+  background-color: rgb(189, 255, 242);
 }
 
 .f11 {
@@ -25,13 +25,13 @@ input {
 }
 
 .w85 {
-  width: 85%;
+  width: 35%;
 }
 
 .button {
   font-family: monospace;
   font-size: 10pt;
-  color: black;
+  color: blue;
   background-color: buttonface;
   text-align: center;
   padding: 2px 6px 3px;

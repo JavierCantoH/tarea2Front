@@ -40,11 +40,16 @@ const FEED_QUERY = gql`
   return (
     <div>
       {data && (
-        <>
+
+
+        <td>
           {data.links.map((link) => (
             <Link key={link.id} link={link} />
           ))}
-        </>
+        </td>
+	
+
+     
       )}
     </div>
 
